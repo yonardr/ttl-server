@@ -18,7 +18,7 @@ export class EmailerService {
           filename: dto.file_name,
           content: file.buffer.toString('base64'),
           encoding: 'base64',
-          contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+          contentType: 'image/png',
         }]
       })
     return res
