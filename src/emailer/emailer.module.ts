@@ -17,7 +17,7 @@ import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handleba
           }
         },
         defaults: {
-          from: '"No Reply" <info@kamion-express.tmweb.ru>',
+          from: '"No Reply" <info@info@kamion-express.tmweb.ru>',
         },
         template: {
           dir: __dirname + '/templates',
