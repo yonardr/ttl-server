@@ -366,7 +366,7 @@ export class EmailerService {
           contentType: 'image/png',
         },
             {
-                filename: 'My Document.docx',
+                filename: `Акт на диагностику ${dto.name}.docx`,
                 content: b64string,
                 encoding: 'base64',
                 contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -695,7 +695,7 @@ export class EmailerService {
         html: `<h1>${dto.name} оставил заявку </h1><h1>Номер телефона: ${dto.tel}</h1><h1>Почта этого пользователя: ${dto.email}</h1><br><h2>Название оборудования: ${dto.equipment_name}</h2><h2>Описание проблемы: ${dto.des}</h2>`, // HTML body content
           attachments: [
               {
-                  filename: 'My Document.docx',
+                  filename: `Акт на диагностику ${dto.name}.docx`,
                   content: b64string,
                   encoding: 'base64',
                   contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
